@@ -8,7 +8,7 @@ submit.addEventListener("click", answer);
 
 function answer(e){
     e.preventDefault()
-    meter.innerHTML = 0.3048*feet.value+"m";
-    inch.innerHTML = 12*feet.value+"in";
-    pixel.innerHTML = 1152*feet.value+"px";
+    meter.innerHTML = (0.3048*feet.value).toFixed(2)+"m";
+    inch.innerHTML = (12*feet.value).toFixed(2)+"in";
+    pixel.innerHTML = (1152*feet.value).toFixed(2)+"px";
 }
